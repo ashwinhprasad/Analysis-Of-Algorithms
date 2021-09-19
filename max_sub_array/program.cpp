@@ -12,7 +12,6 @@ int bruteForce(int a[],int n){
         }
 
     }
-
     return max;
 }
 
