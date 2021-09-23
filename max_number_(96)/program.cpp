@@ -8,11 +8,9 @@
 using namespace std;
 
 int main(){
-
     int n,a,dig=0,temp,flag=0,divider,ans=0;
     cin>>n;
     a = n;
-
     while(a){
         dig++;
         a/=10;

@@ -12,7 +12,6 @@ Return the maximum integer in the array nums​​​.
 using namespace std;
 
 int main(){
-    
     int n,max;
     cin>>n;
     int a[100],b[n];
@@ -25,18 +24,15 @@ int main(){
             a[(2*i)+1] = a[i] + a[i+1];
         }
     }
- 
     for(int i=0;i<n+1;i++){
         b[i] = a[i];
-    }
-        
+    }   
     max = b[0];
     for(int i=0;i<n+1;i++){
         if(max < b[i]){
             max = b[i];
         }
-    }
-    
+    }    
     cout<<max;
     return 0;
 }
