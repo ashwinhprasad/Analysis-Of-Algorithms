@@ -5,7 +5,7 @@ int main(){
     char a[100],b[20];
     int max=0,temp,flag,k=0,odd;
     scanf("%s",a);
-    for(int i;i<strlen(a);i++){
+    for(int i=0;i<strlen(a);i++){
         int count=0,flag=0;
         for(int j=0;j<strlen(a);j++){
             if(b[j] == a[i]){
@@ -22,18 +22,15 @@ int main(){
                     count++;
                 }
             }
-            if(count == 1){
-                odd = 1;
-            }
-            k++;
             if(count%2==1){
                 count--;
                 odd = 1;
             }
             max += count;
+            k++;
         }
     }
-    if (max%2 == 0 && odd == 1){
+    if (odd == 1){
         max+=1;
     }
     printf("%d",max);
