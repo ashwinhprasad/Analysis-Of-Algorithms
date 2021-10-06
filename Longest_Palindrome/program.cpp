@@ -10,6 +10,7 @@ int main(){
         for(int j=0;j<strlen(b);j++){
             if(b[j] == a[i]){
                 flag = 1;
+                break;
             }
         }
         if (flag==1){
